@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+	<title><%= title %> - Microblog</title>
+	
+	<style type="text/css">
+	    /*body{
+		padding-top:60px;
+		padding-bottom:40px;
+	    }*/
+	</style>
+	<link rel="stylesheet" href="/stylesheets/bootstrap.min.css"/>
+    </head>
+    <body>
+	<nav class="navbar  navbar-inverse" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Microblog</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">首页</a></li>
+        <li><a href="/login">登入</a></li>
+	<li><a href="/reg">注册</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+  </nav>
+
+  <div id="container" class="container">
+
+<div class="jumbotron">
+    <h1>欢迎来到Microblog</h1>
+    <p>Microblog 是一个基于nodejs的微博系统</p>
+    <p>
+        <a class="btn btn-primary btn-large" href="/login">登录</a>
+	<a class="btn btn-large" href="/reg">立即注册</a>
+    </p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+    	<h2>Carbo 说</h2>
+	<p>东风破早梅 向暖一枝开 冰雪无人见 春从天上来</p>
+    </div>
+    <div class="col-md-4">
+    	<h2>ByVoid 说</h2>
+	<p>
+	    Open Chinese Convert(OpenCC)是一个开源的中文简繁转换项目，
+	    致力于制作高质量的基于统计预料的简繁转换词库。
+	    还提供函数库(libopencc)、命令行简繁转换工具、人工校对工具、词典生成程序、
+	    在线转换服务及图形用户界面。
+	</p>
+    </div>
+    <div class="col-md-4">
+    	<h2>佛振 说</h2>
+	<p>
+	    中州韵输入法引擎 / Rime Input Method Engine 取意历史上同行的中州韵，
+	    愿写就一部汇集音韵学智慧的输入法经典之作。
+	    项目网站设在 http://code.google.com/p/rimeime
+	    创造应用价值是一方面，更要坚持对好技术的追求，希望能写出灵动而易于扩展的代码，
+	    使其成为一款个性十足的开源输入法。
+	</p>
+    </div>
+</div>
+
+</div>
+    <footer>
+	@2014
+    </footer>
+    </body>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="/javascripts/bootstrap.min.js"></script>
+</html>

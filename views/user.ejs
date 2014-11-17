@@ -1,0 +1,33 @@
+<% include header.ejs %>
+
+<% if(user) {%>
+<form action="/post" method="post" style="text-align:center;" class="well form-inline center">
+	<input type="text" name="post" class="col-sm-8 col-sm-offset-1">
+	<button type="submit" style="float:left;margin-left:10px;" class="btn btn-success">
+		<i class="glyphicon glyphicon-comment">发言</i>
+	</button>
+	<div style="clear:both;"></div>
+</form>
+<% } %>
+
+<% posts.forEach(function(post,index){ 
+	    if(index%3 == 0){
+%>
+<div class="row">
+<% } %>
+<div class="col-sm-4">
+	<h2>
+		<a href="/u/<%= post.user %>"><%= post.user %></a>说
+	</h2>	
+	<p><small><%= post.time %></small></p>
+	<p><%= post.post %></p>
+</div>
+<% if(index%3 == 2) {%>
+</div> <!-- end row -->
+<% } %>
+<% }) %>
+<% if(posts.length % 3 != 0) {%>
+</div>  <!-- end row -->
+<% } %>
+
+<% include footer.ejs %>

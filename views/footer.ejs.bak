@@ -1,0 +1,8 @@
+</div>
+    <footer>
+	@2014
+    </footer>
+    </body>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="../public/javascripts/bootstrap.min.js"></script>
+</html>
