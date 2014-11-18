@@ -3,6 +3,9 @@ bin/
 bin-debug/
 bin-release/
 
+# backup files
+.bak
+
 # Other files and folders
 .settings/
 
