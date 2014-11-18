@@ -4,7 +4,7 @@ bin-debug/
 bin-release/
 
 # backup files
-.bak
+*.bak
 
 # Other files and folders
 .settings/
